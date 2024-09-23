@@ -15,7 +15,7 @@ class LoginPage extends BasePage {
     getRegisterBtn: () => cy.get('[data-qa="signup-button"]'),
   };
 
-  correctLogin = (email, password) => {
+  login = (email, password) => {
     this.elements.getEmailField().click().type(email);
     this.elements.getPasswordField().click().type(password);
     this.elements.getLoginBtn().click();
