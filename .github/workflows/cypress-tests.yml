@@ -1,7 +1,8 @@
 name: Cypress Tests
 
-# Indica cuándo ejecutar el workflow (en este caso, en cada push o pull request a la rama main)
 on:
+  schedule:
+    - cron: "0 20 * * 1" # Ejecuta el workflow todos los lunes a las 17hs (20hs UTC)
   push:
     branches:
       - main
