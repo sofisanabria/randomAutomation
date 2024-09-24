@@ -7,8 +7,8 @@
     "test": "cypress run",
     "open": "npx cypress open"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sofía Sanabria",
+  "license": "MIT",
   "dependencies": {
     "cypress": "^13.14.2"
   },
