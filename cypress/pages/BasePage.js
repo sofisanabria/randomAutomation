@@ -1,4 +1,4 @@
-require("cypress-xpath");
+import "cypress-xpath";
 
 class BasePage {
   getSection = (section) => {
