@@ -4,16 +4,21 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://automationexercise.com/",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require("cypress-mochawesome-reporter/plugin")(on);
     },
   },
-  reporter: "mochawesome",
+  reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
-    reportDir: "cypress/results",
+    reportDir: "reports",
     reportFilename: "testReport",
+    reportTitle: "Test Results",
+    reportPageTitle: "Test Report",
     overwrite: false,
-    html: true,
-    json: true,
     charts: true,
+    code: true,
+    inline: true,
+    enableCharts: true,
+    enableCode: true,
+    embeddedScreenshots: true,
   },
 });
