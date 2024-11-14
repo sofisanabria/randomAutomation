@@ -1,8 +1,8 @@
 name: Cypress Tests
 
 on:
-  schedule:
-    - cron: "0 20 * * 1" # Ejecuta el workflow todos los lunes a las 17hs (20hs UTC)
+  #schedule:
+  #- cron: "0 20 * * 1" Ejecuta el workflow todos los lunes a las 17hs (20hs UTC)
   push:
     branches:
       - main
